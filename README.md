@@ -1,1 +1,29 @@
 # qa_python
+Тесты проверяют:
+- При добавлении книги жанр добавленной книги пустой test_add_new_book_correct_book_empty_genre
+- Добавляется корректная книга
+test_add_new_book_correct_book_len_one
+- Дубликаты не добавляются
+test_add_new_book_correct_named_two_books_len_one
+- Некорректные названия не добавляются
+test_add_new_book_incorrect_named_book_len_zero
+- Получение словаря 
+test_get_books_genre_correct_named_book_genre_dict_equal
+- Получение жанра
+test_get_book_genre_correct_book_genre_true
+- Установка жанра
+test_set_book_genre_correct_book_genre_true
+- Книги по жанру
+test_get_books_with_specific_genre_correct_named_book_genre_dict_correct_genre_success
+- Любой жанр возвращает пустой список из пустой коллекции
+test_get_books_with_specific_genre_correct_named_book_genre_dict_incorrect_genre_empty_list
+- Детские книги
+test_get_books_for_children_correct_kids_book_success
+- Добавление в избранное без дубликатов
+test_add_book_in_favorites_correct_named_book_several_times_favorites_len_one
+- Добавление несуществующей книги в избранное
+test_add_book_in_favorites_unknown_book_empty_favorites
+- Удаление из избранного
+test_delete_book_from_favorites_book_favorites_len_decreased_by_one
+- Получение списка избранного
+test_get_list_of_favorites_books_book_list_equal
